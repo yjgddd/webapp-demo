@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>机器学习网站</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./signup.css">
+</head>
+
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="../index.html">机器学习网站</a>
+       
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../machine_learning/machine_learning.html">入门教程</a>
+            </li>
+            <li>
+              <a href="../machine_learning_titanic/machine_learning_titanic.html">实战教程</a>
+            </li>
+            <li>
+              <a href="#">关于</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav" style="float: right;">
+            <li class="active">
+              <a href="../signin/signin.html">登录</a>
+            </li>
+            <li>
+              <a href="#">注册</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+	<div id="signup" class="row justify-content-center">
+		<div class="col-auto">
+			<form row="form" v-on:submit.prevent="do_submit_signup_info" >
+				 <h4 class="signup-heading">注册</h4>
+
+				<div class="form-row">
+					<div class="col">
+						<input type="text"  class="form-control" style="width: 300px;" placeholder="请输入3-12位用户名,仅包含数字和字母" v-model="newUsername"  pattern="[A-Za-z_0-9]{3,12}" required oninvalid="setCustomValidity('');" oninput="setCustomValidity('');" >
+
+					</div>
+			    </div>
+
+			    <div class="form-row">
+			    	<div class="col">
+			    		<input type="password" class="form-control" placeholder="请输入6-15位密码，仅包含数字和字母" v-model="newPassword"  pattern="[A-Za-z_0-9]{6,15}" required>
+			    	</div>
+			    </div>
+
+			    <div class="form-row">
+			    	<div class="col">
+			    		<input type="password" @change="check_repeatpassword"  class="form-control" placeholder="请再输入一次密码" v-model="repeatPassward" pattern="[A-Za-z_0-9]{6,15}"  required>
+			    	</div>
+			    </div>
+
+			    <div class="form-row">
+			    	<div class="col">
+			    		<input type="email" class="form-control" placeholder="请输入邮箱" v-model="email" required>
+			    	</div>
+			    </div>
+
+			    <div class="form-row">
+				     <div class="col">
+					    <button type="submit" class="btn btn-block">注册</button>
+				     </div>
+			    </div>
+                
+                <div class="to_signin">
+                <a href="../signin/signin.html">已有账号，立即登录</a>
+                <div>
+		    </form>
+		</div>
+    </div>
+</body>
+
+<script src="../jquery-3.2.1.slim.min.js"></script>
+<script src="../popper.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script src="../vue.js"></script>
+<script src="../axios.js"></script>
+<script src="../signup/signup.js"></script>
+</html>

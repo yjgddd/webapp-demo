@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>机器学习网站</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./signin.css">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="../index.html">机器学习网站</a>
+       
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../machine_learning/machine_learning.html">入门教程</a>
+            </li>
+            <li>
+              <a href="../machine_learning_titanic/machine_learning_titanic.html">实战教程</a>
+            </li>
+            <li>
+              <a href="#">关于</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav" style="float: right;">
+            <li class="active">
+              <a href="#">登录</a>
+            </li>
+            <li>
+              <a href="../signup/signup.html">注册</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     <div  class="container">
+	 <div id="signin" class="row justify-content-center">
+		<div class="col-md-12">
+			<form row="from" v-on:submit.prevent="do_submit_signin_info">
+                <h4 class="signin-heading">登录</h4>
+				<div class="form-row" >
+					<div class="col">
+						<input type="text" class="form-control" placeholder="请输入用户名" v-model="username" required="required"/>
+					</div>
+			    </div>
+
+			    <div class="form-row">
+			    	<div class="col">
+			    		<input type="password" class="form-control" placeholder="请输入密码" v-model="password" required="required" />
+			    	</div>
+			    </div>
+
+			    <div class="form-row">
+				     <div class="col">
+					    <button class="btn  btn-block">登录</button>
+				     </div>
+			    </div>
+			    <div class="to_signup">
+                <a href="../signup/signup.html">没有账号，立即注册</a>
+          <div>
+		    </form>
+		</div>
+		</div>
+	</div>
+</body>
+
+<script src="../jquery-3.2.1.slim.min.js"></script>
+<script src="../popper.min.js"></script>
+<script src="../bootstrap.min.js"></script>
+<script src="../vue.js"></script>
+<script src="../axios.js"></script>
+<script src="../signin/signin.js"></script>
+</html>

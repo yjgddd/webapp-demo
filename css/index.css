@@ -1,0 +1,20 @@
+body{
+  padding-top: 50px;
+}
+.jumbotron{
+  height: 400px;
+  margin-top: 30px;
+  background-image: url('../images/bg.jpg');
+}
+footer {
+  background-color: #222;
+  height: 80px;
+  line-height: 80px;
+  margin-top: 100px;
+}
+footer a {
+  color: #fff;
+}
+.col-lg-4 p{
+  height: 130px;
+}

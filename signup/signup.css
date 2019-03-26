@@ -1,0 +1,34 @@
+body{
+		background-color: #222;
+	}
+#signup {
+    max-width: 330px;
+    padding: 15px;
+    margin: 100px auto;
+}
+.form-row{
+	padding-top: 5px;
+}
+.row{
+	margin-left:20x;
+}
+.signup-heading{
+	color: white;
+	text-align: center;
+}
+.to_signin{
+	margin: 7px 60px;
+}
+#signup a:link, a:visited
+{
+	text-decoration: none;
+	color:#777;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+#signup a:hover,a:active
+{
+	color:#FFF;
+	text-decoration: none;
+	text-align: center;
+}
