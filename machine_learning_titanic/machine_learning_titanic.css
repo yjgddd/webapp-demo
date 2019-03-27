@@ -8,16 +8,6 @@ body {
   margin-top: 30px;
   background-image: url('../images/bg.jpg');
 }
-.jumbotron h1{
-  margin: 80px;
-  float: right;
-}
-.jumbotron p{
-  font-size: 15px;
-  margin-left: 450px;
-  margin-top: 80px;
-  float: right;
-}
 footer {
   background-color: #222;
   height: 80px;
